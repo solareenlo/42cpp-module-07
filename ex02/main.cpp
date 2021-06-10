@@ -6,7 +6,7 @@
 /*   By: tayamamo <tayamamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 15:32:54 by tayamamo          #+#    #+#             */
-/*   Updated: 2021/06/10 16:29:41 by tayamamo         ###   ########.fr       */
+/*   Updated: 2021/06/10 16:34:21 by tayamamo         ###   ########.fr       */
 /*   Copyright 2021                                                           */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "Array.hpp"
 
 template <typename T>
-void    print_array(Array<T>& arr) {
+void    print_array(Array<T> const& arr) {
     for (int i = 0; i < static_cast<int>(arr.size()); i++) {
         std::cout << arr[i] << std::endl;
     }
