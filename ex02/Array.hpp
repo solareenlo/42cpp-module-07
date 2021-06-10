@@ -6,7 +6,7 @@
 /*   By: tayamamo <tayamamo@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/10 08:43:55 by tayamamo          #+#    #+#             */
-/*   Updated: 2021/06/10 15:32:06 by tayamamo         ###   ########.fr       */
+/*   Updated: 2021/06/10 16:26:14 by tayamamo         ###   ########.fr       */
 /*   Copyright 2021                                                           */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ class   Array {
  public:
     Array() : n_(0), a_(new T[0]) {}
     explicit Array(unsigned int n) : n_(n), a_(new T[n]) {}
-    Array(Array const& src) { this->operator=(src); }
+    Array(Array const& src) : a_(NULL) { this->operator=(src); }
     ~Array() { delete[] a_; }
 
     Array&  operator=(Array const& right) {
